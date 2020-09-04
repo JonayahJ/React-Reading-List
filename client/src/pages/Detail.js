@@ -12,7 +12,7 @@ function Detail() {
   // The book id for this route can be accessed using the useParams hook
   // from react-router-dom.
   useEffect(() => {
-    API.getBook(id) // call the id for the dynamic route
+    API.getBook(id) // call the id for the dynamic route //
       .then(res => setBook(res.data))
       .catch(err => console.log(err));
   }, [])
